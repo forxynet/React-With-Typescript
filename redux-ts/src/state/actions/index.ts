@@ -11,7 +11,7 @@ interface SearchRepositoriesSuccessAction {
 
 interface SearchRepositoriesErrorAction {
   type: ActionType.SEARCH_REPOSITORIES_ERROR;
-  payload: '';
+  payload: string;
 }
 
 export type Action =
