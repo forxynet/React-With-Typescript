@@ -10,13 +10,13 @@
 }
 
 .preview-error {
-  position:absolute;
-  top:10px;
+  position: absolute;
+  top: 10px;
   left: 10px;
   color: red;
 }
 
-body .preview-wrapper:after {
+.react-draggable-transparent-selection .preview-wrapper:after {
   content: '';
   position: absolute;
   top: 0;
