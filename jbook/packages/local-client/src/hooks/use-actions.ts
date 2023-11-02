@@ -8,5 +8,5 @@ export const useActions = () => {
 
   return useMemo(() => {
     return bindActionCreators(actionCreators, dispatch);
-  },[dispatch]);
+  }, [dispatch]);
 };
