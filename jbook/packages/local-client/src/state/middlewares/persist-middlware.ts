@@ -1,9 +1,8 @@
-import { Dispatch } from "redux";
-import { Action } from "../actions";
-import { ActionType } from "../action-types";
-import { saveCells } from "../action-creators";
-import { RootState } from "../reducers";
-import { clearTimeout } from "timers";
+import { Dispatch } from 'redux';
+import { Action } from '../actions';
+import { ActionType } from '../action-types';
+import { saveCells } from '../action-creators';
+import { RootState } from '../reducers';
 
 export const persistMiddlware = ({
   dispatch,
@@ -29,7 +28,6 @@ export const persistMiddlware = ({
         if (timer) {
           clearTimeout(timer);
         }
-
         timer = setTimeout(() => {
           saveCells()(dispatch, getState);
         }, 250);
