@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(el!);
 const App = () => {
   return (
     <Provider store={store}>
-      <div>       
+      <div>
         <CellList />
       </div>
     </Provider>
